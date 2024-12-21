@@ -1,0 +1,19 @@
+<footer class="main-nav">
+  <div class="container flex justify-between items-center p-4">
+
+    <a routerLink="/categories" class="router-link" routerLinkActive="active">
+      <div [innerHTML]="svg['folder']"></div>
+    </a>
+
+    <a routerLink="/tasks/day" class="router-link" routerLinkActive="active">
+      <div [innerHTML]="svg['checkbox']"></div>
+    </a>
+
+    <!-- <a [routerLink]="['tasks/month']" class="router-link" routerLinkActive="active">
+      <div [innerHTML]="svg['calendar']"></div>
+    </a> -->
+    <a routerLink="/ui" class="router-link" routerLinkActive="active">
+      <div [innerHTML]="svg['calendar']"></div>
+    </a>
+  </div>
+</footer>

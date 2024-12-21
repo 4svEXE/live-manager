@@ -1,0 +1,7 @@
+.router-link {
+  opacity: 0.6;
+
+  &.active {
+    opacity: 1;
+  }
+}

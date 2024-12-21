@@ -1,0 +1,21 @@
+<div class="container">
+  <nav class="navigation">
+    <ul class="nav-list">
+      <li class="nav-item prev">
+        <a (click)="updateToPreviousDay()" [routerLink]="getPreviousDay()">
+          <div [innerHTML]="svg['arr-prev']"></div>
+        </a>
+      </li>
+      <li class="nav-item curr">
+          <a (click)="updateDateToNow()" [routerLink]="getCurrentDay()">current</a>
+        </li>
+      <li class="nav-item next">
+        <a (click)="updateToNextDay()" [routerLink]="getNextDay()">
+          <div [innerHTML]="svg['arr-next']"></div>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <app-task-display [currentDate]="currentDateService.currentDate"></app-task-display>
+</div>

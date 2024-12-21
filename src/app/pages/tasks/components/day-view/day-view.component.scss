@@ -1,0 +1,27 @@
+.navigation {
+  position: fixed;
+  bottom: 40%;
+  width: 100%;
+
+  .nav-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+
+    .nav-item{
+      padding: 20px;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &.prev{
+        // left: 0;
+      }
+      &.next{
+
+      }
+    }
+  }
+}
